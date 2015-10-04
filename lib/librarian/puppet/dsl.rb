@@ -15,6 +15,7 @@ module Librarian
       source :git => Source::Git
       source :path => Source::Path
       source :github_tarball => Source::GitHubTarball
+      source :rpm => Source::RPM
 
       def default_specfile
         Proc.new do
